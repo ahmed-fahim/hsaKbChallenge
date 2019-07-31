@@ -4,7 +4,8 @@ import java.util.HashMap;
 
 public class UserApiUsageHandler extends GlobalApiUsageHandler implements Comparable<UserApiUsageHandler> {
 	/**
-	 * Inheriting GlobalApiUsageHandler as it has common purpose with a few specialized purpose
+	 * Inheriting GlobalApiUsageHandler as it has common purpose with a few
+	 * specialized purpose
 	 */
 	private String userName;
 	private HashMap<String, Integer> apiTotalHitCounter;
