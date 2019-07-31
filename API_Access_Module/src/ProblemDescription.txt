@@ -1,0 +1,33 @@
+The task is to create a system that controls the usage of APIs globally and also per user.
+
+Available functions of the system.
+	1. Create API_NAME API_URI
+		Creates an api with the name of API_Name and the accessable uri = API_URI
+		Create getData dataURI.com -> creation of an api getData that accesses URI ataURI.com
+	   
+	2. Limit API_NAME LIMIT_AMOUNT
+		Assignes Limit upon a certain api API_NAME.
+		Limit getData 5 -> means the api "getData" cannot be accessed 
+		more than 5 times in a minute in the overall system
+		
+	3. LimitUsr USER_NAME API_NAME LIMIT_AMOUNT
+		Assignes Limit upon a certain api API_NAME for a certain USER_NAME.
+		Limit Fahim getData 5 -> means the api "getData" cannot be accessed 
+		more than 5 times in a minute by user Fahim.
+		
+		N.B: if User Limit is not crossed, but global Limit is crossed, 
+		than also access would be restricted		
+		
+	4. Call USER_NAME API_URI
+		User USER_NAME attempts to call API_URI
+		
+	5. ShowMaxHit API_URI
+		Supposed to show a message in below format:
+		API Name = API_NAME, Uri = API_URI, MaxHit = maxNumberOfHitByAnyUser, User = NameOfUserWithMaxHit
+		
+		
+/* How to Use */
+1. Run the application.
+2. Write any of the above APIs with proper argument passing.
+3. The results would be shown in the console.
+/****************/
